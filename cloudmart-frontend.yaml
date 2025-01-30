@@ -17,7 +17,12 @@ spec:
       containers:
       - name: cloudmart-frontend-app
 # make sure you replace the ECR URI with the one from your ECR in AWS
-        image: public.ecr.aws/b4r8x3c5/cloudmart-frontend:latest
+        #image: public.ecr.aws/b4r8x3c5/cloudmart-frontend:latest
+       # replaced with variable from Code_Build pipeline
+        image: CONTAINER_IMAGE
+ 
+    
+    
 ---
 
 apiVersion: v1
